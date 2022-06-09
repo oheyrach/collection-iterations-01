@@ -1,0 +1,358 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(file:///Users/rae/Downloads/Paper%20Texture%20BG.png);
+    color: #EBE6E280;  
+}
+
+.logo{
+    display: inline-block;
+    padding-left: 40px;
+}
+
+h1 {
+    font-family: ohm-bold, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    color: #EBE6E2;
+}
+
+.explore{
+    font-family: 'Avenir', Helvetica, sans-serif;
+    line-height: 37px;
+    font-weight: lighter;
+    font-size: 18px;
+}
+
+.all{
+    color: #EBE6E2;    
+}
+
+
+.impact{
+    font-family: 'Avenir', Helvetica, sans-serif;
+    line-height: 40px;
+    font-weight: lighter;
+    font-size: 18px;
+    padding-top: 4px;
+}
+
+.resources{
+    font-family: 'Avenir', Helvetica, sans-serif;
+    line-height: 40px;
+    font-weight: lighter;
+    font-size: 18px;
+    padding-top: 4px;
+}
+
+.menu{
+    padding-left: 32px;
+    display: inline;
+}
+
+.menu ul {
+  display: inline-block;
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #6E804C;
+  font-family: 'Avenir', Helvetica, sans-serif;
+  font-weight: lighter;
+  font-size: 20px;
+  outline: none;
+}
+
+.menu li {
+  display: inline-block;
+  color: #EBE6E2;
+  outline: none;
+}
+
+.menu li a {
+  color: #ebe6e280;
+  padding: 24px;
+  text-decoration: none;
+}
+
+.menu li a:hover {
+    color:rgb(235, 230, 226);
+ }
+
+
+/* ---------- RECEIPT ONE ---------- */
+
+.ticket-system-one {
+    max-width: 240px;
+    margin-top: -600px;
+    margin-left: 280px;
+    display: flex; 
+    flex-direction: column;
+}
+.ticket-system-one .top {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ticket-system-one .top .printer {
+    width: 135%;
+    height: 20px;
+    border: 5px solid #fff;
+    border-radius: 10px;
+    box-shadow: 1px 3px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+.ticket-system-one .receipts-wrapper {
+    overflow: hidden;
+    margin-top: -10px;
+    padding-bottom: 10px;  
+}
+
+.ticket-system-one .receipts {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    transform: translateY(-510px);
+    animation-duration: 2.5s;
+    animation-delay: 500ms;
+    animation-name: print;
+    animation-fill-mode: forwards;
+}
+
+.ticket-system-one .receipts .receipt {
+    padding: 25px 30px;
+    text-align: left;
+    min-height: 500px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px 10px 20px 20px;
+    box-shadow: 1px 3px 8px 3px rgba(0, 0, 0, 0.2);
+}
+
+
+
+@keyframes print {
+    0% {
+        transform: translateY(-1010px);
+   }
+    15% {
+    transform: translateY(-810px);
+   }
+    35% {
+        transform: translateY(-595px);
+   }
+    55% {
+    transform: translateY(-310px);
+}
+    70% {
+        transform: translateY(-140px);
+   }
+    100% {
+        transform: translateY(0);
+   }
+}
+
+
+input {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: normal;
+    margin: 0;
+}
+
+input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+
+/* ---------- RECEIPT TWO ---------- */
+
+
+.ticket-system-two {
+    max-width: 240px;
+    margin-top: -744px;
+    margin-left: 620px;
+    display: flex;
+    flex-direction: column;
+}
+
+.ticket-system-two .top {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ticket-system-two .top .printer {
+    width: 135%;
+    height: 20px;
+    border: 5px solid #fff;
+    border-radius: 10px;
+    box-shadow: 1px 3px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+.ticket-system-two .receipts-wrapper {
+    overflow: hidden;
+    margin-top: -10px;
+    padding-bottom: 10px;
+}
+
+.ticket-system-two .receipts {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transform: translateY(-510px);
+    animation-duration: 2.5s;
+    animation-delay: 500ms;
+    animation-name: print;
+    animation-fill-mode: forwards;
+}
+.ticket-system-two .receipts .receipt {
+    padding: 25px 30px;
+    text-align: left;
+    min-height: 500px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px 10px 20px 20px;
+    box-shadow: 1px 3px 8px 3px rgba(0, 0, 0, 0.2);
+}
+
+.ticket-system-two .receipts .receipt .details .item {
+    display: flex;
+    flex-direction: column;
+    min-width: 70px;
+}
+
+
+@keyframes print {
+    0% {
+        transform: translateY(-1010px);
+   }
+    15% {
+    transform: translateY(-810px);
+   }
+    35% {
+        transform: translateY(-595px);
+   }
+    55% {
+    transform: translateY(-310px);
+}
+    70% {
+        transform: translateY(-140px);
+   }
+    100% {
+        transform: translateY(0);
+   }
+}
+
+
+input {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: normal;
+    margin: 0;
+}
+
+input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+
+/* ---------- RECEIPT THREE ---------- */
+
+
+.ticket-system-three {
+    max-width: 240px;
+    margin-top: -744px;
+    margin-left: 960px;
+    display: flex;
+    flex-direction: column;
+}
+
+.ticket-system-three .top {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ticket-system-three .top .printer {
+    width: 135%;
+    height: 20px;
+    border: 5px solid #fff;
+    border-radius: 10px;
+    box-shadow: 1px 3px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+.ticket-system-three .receipts-wrapper {
+    overflow: hidden;
+    margin-top: -10px;
+    padding-bottom: 10px;
+}
+
+.ticket-system-three .receipts {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transform: translateY(-510px);
+    animation-duration: 2.5s;
+    animation-delay: 500ms;
+    animation-name: print;
+    animation-fill-mode: forwards;
+}
+.ticket-system-three .receipts .receipt {
+    padding: 25px 30px;
+    text-align: left;
+    min-height: 500px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px 10px 20px 20px;
+    box-shadow: 1px 3px 8px 3px rgba(0, 0, 0, 0.2);
+}
+
+.ticket-system-three .receipts .receipt .details .item {
+    display: flex;
+    flex-direction: column;
+    min-width: 70px;
+}
+
+
+@keyframes print {
+    0% {
+        transform: translateY(-1010px);
+   }
+    15% {
+    transform: translateY(-810px);
+   }
+    35% {
+        transform: translateY(-595px);
+   }
+    55% {
+    transform: translateY(-310px);
+}
+    70% {
+        transform: translateY(-140px);
+   }
+    100% {
+        transform: translateY(0);
+   }
+}
+
+
+input {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: normal;
+    margin: 0;
+}
+
+input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+

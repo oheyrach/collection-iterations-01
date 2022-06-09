@@ -1,0 +1,144 @@
+html, body{
+    height:300%;
+    margin:0px;
+  }
+  @keyframes clip1{
+    0%{clip-path: polygon(0% -50%, 50% -50%, -50% 50%, -100% 50% );}
+    100%{clip-path: polygon(150% 50%, 200% 50%, 100% 150%, 50% 150%);}
+  }
+  @keyframes clipa{
+    0%{clip-path: polygon(-5% -55%, 55% -45%, -45% 55%, -95% 55% );}
+    100%{clip-path: polygon(150% 50%, 200% 50%, 100% 150%, 50% 150%);}
+  }
+  @keyframes clip2{
+    0%{clip-path: polygon(50% -50%, 100% -50%, 200% 50%, 150% 50%);}
+    100%{clip-path: polygon(-100% 50%, -50% 50%, 50% 150%, 0% 150%);}
+  }
+  @keyframes clipb{
+    0%{clip-path: polygon(40% -60%, 100% -50%, 190% 40%, 150% 50%);}
+    100%{clip-path: polygon(-100% 50%, -50% 50%, 50% 150%, 0% 150%);}
+  }
+  @keyframes clip3{
+    0%{clip-path: polygon(-100% -150%, -50% -150%, -150% -50%, -200% -50%);}
+    100%{clip-path: polygon(150% 50%, 200% 50%, 100% 150%, 50% 150%);}
+  }
+  @keyframes clip4{
+    0%{clip-path: polygon(150% -150%, 200% -150%, 300% -50%, 250% -50%);}
+    100%{clip-path: polygon(-100% 50%, -50% 50%, 50% 150%, 0% 150%);}
+  }
+  .clip{
+      filter:grayscale(1);
+      position: fixed;
+      width:100%;
+      height:100%;
+      background: url("https://ocr.space/Content/Images/receipt-ocr-original.jpg") no-repeat center;
+      transform-origin:center;
+  }
+  #clip1 { animation:clip1 4s linear infinite; }
+  #clipa {
+      transform: scale(1.1,1.1);
+      animation:clipa 9s linear infinite;  
+  }
+  #clip2 {
+      transform: scale(1.12,1.12); 
+      animation:clip2 5s linear infinite;  
+  }
+  #clipb {
+      transform: scale(1.14,1.14);
+      animation:clipb 4s linear infinite;  
+  }
+  #clip3 {
+      transform: scale(1.15,1.15);
+      animation:clip3 7s linear infinite;  
+  }
+  #clip4 {
+      transform: scale(1.13,1.13);
+      animation:clip4 6s linear infinite;  
+  }
+
+
+  body {
+    padding-top: 50px;
+    padding-left: 150px;
+    display: flex;
+    height: 100vh;
+  }
+  
+  @keyframes cursor {
+    from, to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: rgb(0, 0, 0);
+    }
+  }
+  @keyframes typing {
+    from {
+      width: 100%;
+    }
+    90%, to {
+      width: 0;
+    }
+  }
+  @keyframes slide {
+    33.33333% {
+      font-size: 3rem;
+      letter-spacing: 3px;
+    }
+    to {
+      font-size: 0;
+      letter-spacing: 0;
+    }
+  }
+  .typing-slider {
+    font-family: Consolas, monospace;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+  }
+  
+  .typing-slider p {
+    position: relative;
+    display: inline;
+    font-size: 0;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    animation: slide 15s step-start infinite;
+  }
+  
+  .typing-slider p::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-left: 3px solid rgb(0, 255, 55);
+    background-color: rgb(0, 255, 55);
+    animation: typing 5s infinite, cursor 1s infinite;
+  }
+  
+  .typing-slider p:nth-child(1) {
+    animation-delay: 0s;
+  }
+  .typing-slider p:nth-child(1)::after {
+    animation-delay: 0s;
+    animation-timing-function: steps(16), step-end;
+  }
+  
+  .typing-slider p:nth-child(2) {
+    animation-delay: 5s;
+  }
+  .typing-slider p:nth-child(2)::after {
+    animation-delay: 5s;
+    animation-timing-function: steps(23), step-end;
+  }
+  
+  .typing-slider p:nth-child(3) {
+    animation-delay: 10s;
+  }
+  .typing-slider p:nth-child(3)::after {
+    animation-delay: 10s;
+    animation-timing-function: steps(12), step-end;
+  }
+  
+  
